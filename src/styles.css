@@ -1,0 +1,137 @@
+body { 
+    margin: 0; 
+    font-family: Arial, sans-serif; background: #0b0f14; 
+    color: #e6edf3; 
+    }
+    .app { 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    }
+    
+    .header { 
+    padding: 16px; 
+    border-bottom: 1px solid #1b2634; 
+    }
+    
+    .header h1 { 
+    margin: 0; 
+    font-size: 20px; 
+    }
+    .sub { 
+    margin: 6px 0 0;
+    color: #9fb2c8;
+    font-size: 13px; 
+    }
+    
+    .menu { 
+    display: flex; 
+    gap: 10px; 
+    padding: 12px 16px; 
+    border-bottom: 1px solid #1b2634; 
+    }
+    
+    .link { 
+    padding: 8px 10px; 
+    border-radius: 10px; 
+    text-decoration: none; 
+    color: #cfe2ff; 
+    background: #111926; 
+    }
+    
+    .link.active { 
+    font-weight: bold; 
+    outline: 2px solid #243b55; 
+    }
+    
+    .conteudo-principal { 
+    padding: 16px; 
+    max-width: 980px; 
+    margin: 0 auto; 
+    width: 100%; 
+    flex: 1; 
+    }
+    
+    .stack { 
+    display: grid; 
+    gap: 12px; 
+    }
+    
+    .box { 
+    padding: 10px; 
+    background: #111926; 
+    border: 1px solid #1b2634; 
+    border-radius: 12px; 
+    }
+    
+    .grid { 
+    display: grid;
+    gap: 12px; 
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    }
+    
+    .card { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; gap: 12px;
+    padding: 12px; 
+    background: #0f1723; 
+    border: 1px solid #1b2634; 
+    border-radius: 14px;
+    }
+    
+    .muted { 
+    color: #9fb2c8; 
+    }
+    
+    .form { 
+    display: grid; 
+    gap: 10px; 
+    max-width: 520px;
+     }
+    
+    label { 
+    display: grid; 
+    gap: 6px; 
+    font-size: 14px; 
+    color: #cfe2ff; 
+    }
+    
+    input { 
+    padding: 10px 12px; 
+    border-radius: 12px; 
+    border: 1px solid #1b2634; 
+    background: #0b0f14; 
+    color: #e6edf3; 
+    }
+    
+    .row { 
+    display: flex; 
+    gap: 10px; 
+    }
+    
+    .btn { 
+    border: 0; 
+    padding: 10px 12px; 
+    border-radius: 12px; 
+    cursor: pointer; 
+    background: #1f6feb; 
+    color: white; 
+    }
+    
+    .btn.ghost { 
+    background: transparent; 
+    border: 1px solid #1b2634; 
+    color: #cfe2ff; 
+    }
+    
+    .btn.danger { 
+    background: #da3633; 
+    }
+    
+    .footer {
+    padding: 14px 16px; 
+    border-top: 1px solid #1b2634; 
+    color: #9fb2c8; 
+    text-align: center;
+     }
