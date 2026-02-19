@@ -6,8 +6,10 @@ export default function CardEvento({ evento, onRemover }) {
       <div>
         <h3>{evento.titulo}</h3>
         <p className="muted">
-          {evento.data} • {evento.local} {evento.descricao && <p className="descricao"> {evento.descricao}</p>}   
-        </p>
+          {evento.data} • {evento.local} {evento.descricao && (
+      <p className="descricao"> {evento.descricao}</p>
+      )}   
+        
       </div>
 
       <button className="btn danger" onClick={() => onRemover(evento.id)}>
