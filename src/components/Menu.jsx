@@ -4,16 +4,27 @@ import { NavLink } from "react-router-dom";
 export default function Menu() {
   return (
     <nav className="menu">
-      <NavLink to="/" className={({ isActive }) => (isActive ? "link active" : "link")}>
+      {/* MENU (Usuário): Home e lista */}
+      <NavLink
+        to="/"
+        className={({ isActive }) => (isActive ? "link active" : "link")}
+      >
         Home
       </NavLink>
 
-      <NavLink to="/evento" className={({ isActive }) => (isActive ? "link active" : "link")}>
+      <NavLink
+        to="/evento"
+        className={({ isActive }) => (isActive ? "link active" : "link")}
+      >
         Eventos
       </NavLink>
 
-      <NavLink to="/cadastrar" className={({ isActive }) => (isActive ? "link active" : "link")}>
-        Cadastrar
+      {/* MENU (Admin): cadastro/edição acontece na mesma tela /cadastrar */}
+      <NavLink
+        to="/cadastrar"
+        className={({ isActive }) => (isActive ? "link active" : "link")}
+      >
+        Cadastrar (Admin)
       </NavLink>
     </nav>
   );
