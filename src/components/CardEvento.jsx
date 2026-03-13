@@ -19,25 +19,8 @@ export default function CardEvento({ evento, onRemover, onEditar }) {
         )}
 
         <p className="muted">
-          {evento.data} • {evento.local}
+          {evento.data} • {evento.local} {evento.descricao && <p className="descricao"> {evento.descricao}</p>}   
         </p>
-
-        {/* ✅ Exercício Nível 1: mostrar descrição no card */}
-        {evento.descricao && <p className="descricao">{evento.descricao}</p>}
-
-        <div className="row">
-          {/* ✅ Exercício Nível 3: rota de detalhe /evento/:id */}
-          <Link className="btn" to={`/evento/${evento.id}`}>
-            Ver detalhes
-          </Link>
-
-          {/* ✅ Exercício Nível 3: botão editar (leva para /cadastrar preenchendo) */}
-          {onEditar && (
-            <button className="btn ghost" type="button" onClick={() => onEditar(evento)}>
-              Editar
-            </button>
-          )}
-        </div>
       </div>
 
       <button className="btn danger" onClick={() => onRemover(evento.id)}>
