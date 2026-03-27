@@ -70,7 +70,7 @@ export default function EventoDetalhe({ eventos }) {
         <p className="muted">Sem mapa cadastrado.</p>
       )}
 
-      {/* ✅ CORRIGIDO: passa vagasRestantes correto para o link de checkout */}
+      {/*  CORRIGIDO: passa vagasRestantes correto para o link de checkout */}
       <Link className="btn" to={`/evento/${evento.id}/checkout`}>
         Comprar ingresso
       </Link>
